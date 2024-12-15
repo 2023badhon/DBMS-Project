@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Management System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<main>
+    <div class="appointment-container">
+        <!-- Header with Profile Navigation Link -->
+        <header class="appointment-header">
+            <div class="logo">
+                <span class="logo-text">DAMS</span>
+            </div>
+            <div class="header-icons">
+                <!-- Profile Icon / Link -->
+                <a href="client-profile.html" id="profile-link">
+                    <i class="fa-solid fa-user"></i> My Profile
+                </a>
+                <!-- Client Dashboard Icon / Link -->
+                <a href="client-dashboard.html" id="dashboard-link">
+                    <i class="fa-solid fa-user"></i> Client Dashboard
+                </a>
+                  <!-- Logout Button -->
+        <a href="#" id="logout-link">
+            <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </a>
+            </div>
+        </header>
+        <section class="appointment">
+            <div class="appointment-images">
+                <img src="doctor1.jpg" alt="Doctor Image 1">
+                <img src="doctor2.jpg" alt="Doctor Image 2">
+            </div>
+        <section class="appointment">
+            <h2 class="appointment-heading">Book an Appointment</h2>
+            <form id="appointment-form" class="appointment-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Full name" required>
+                    <input type="email" placeholder="Email address" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Enter Phone Number" required>
+                    <input type="date" placeholder="dd-mm-yyyy" required>
+                </div>
+                <div class="form-group">
+                    <select id="doctor-select" required>
+                        <option value="" disabled selected>Select Doctor</option>
+                    </select>
+                    <select id="specialization-select" required>
+                        <option value="" disabled selected>Select Specialization</option>
+                    </select>
+                </div>
+                <textarea placeholder="Additional Message"></textarea>
+                <button type="button" id="book-now">BOOK NOW</button>
+            </form>
+        </section>
+    </div>
+    <script src="appointmentbook.js"></script>
+</body>
+</html>

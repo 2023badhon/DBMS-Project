@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard</title>
+    <link rel="stylesheet" href="client-dashboard.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="dashboard-container"> 
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-logo">
+                    <span class="logo-text">DAMS</span>
+                </div>
+                <button id="logout-btn">Logout</button>
+            </aside>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="dashboard-header">
+            <h1>Client Dashboard</h1>
+        </header>
+
+        <section class="stats-section">
+            <div class="stats-card yellow">
+                <h2>Upcoming Appointments</h2>
+                <p class="stats-value"></p>
+                <button class="view-btn" data-status="pending">View Details</button>
+            </div>
+            <div class="stats-card green">
+                <h2>Completed Appointments</h2>
+                <p class="stats-value"></p>
+                <button class="view-btn" data-status="approved">View Details</button>
+            </div>
+            <div class="stats-card red">
+                <h2>Cancelled Appointments</h2>
+                <p class="stats-value"></p>
+                <button class="view-btn" data-status="canceled">View Details</button>
+            </div>
+            <div class="stats-card blue">
+                <h2>Total Appointments</h2>
+                <p class="stats-value"></p>
+                <button class="view-btn" data-status="all">View Details</button>
+            </div>
+        </section>
+
+        <section class="appointments-section">
+            <h2>My Appointments</h2>
+            <div class="appointments-list">
+                <!-- Appointments will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="dashboard-footer">
+        <p>&copy; Doctor Appointment Management System</p>
+    </footer>
+
+    <script src="client-dashboard-stats.js"></script>
+</body>
+</html>

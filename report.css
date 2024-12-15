@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #00487c;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-logo {
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f4f4f9;
+}
+
+.sidebar-logo .logo-text {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* Main Container */
+.dashboard-container {
+    margin-left: 240px; /* Matches sidebar width */
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+/* Filters Section */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #e8f1f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filters label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.filters input,
+.filters select,
+.filters button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.filters button {
+    background-color: #00487c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+    background-color: #00305d;
+}
+
+/* Report Table Styles */
+#appointmentsReportTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#appointmentsReportTable thead {
+    background-color: #00487c;
+    color: #fff;
+    text-align: left;
+}
+
+#appointmentsReportTable th,
+#appointmentsReportTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#appointmentsReportTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#appointmentsReportTable tbody tr:hover {
+    background-color: #f1f5f9;
+    cursor: pointer;
+}
+
+/* Export Button */
+#exportReport {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin-left: auto;
+}
+
+#exportReport:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+.dashboard-footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 10px 0;
+    background-color: #f4f4f9;
+    border-top: 1px solid #ddd;
+}
+
+.dashboard-footer .back-to-home {
+    margin-top: 10px;
+}
+
+.dashboard-footer .btn-home {
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.dashboard-footer .btn-home:hover {
+    color: #0056b3;
+}

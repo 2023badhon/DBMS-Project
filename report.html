@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <link rel="stylesheet" href="report.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="doctors.js"></script> <!-- Link JavaScript file -->
+    <script defer src="report.js"></script> <!-- Link JavaScript file -->
+</head>
+<body>
+    <div class=" dashboard-container">
+        <h2>Appointment Report</h2>
+        <!-- Filter Section -->
+        <div class="filters">
+            <label for="status">Appointment Status:</label>
+            <select id="status" name="status">
+                <option value="all">All</option>
+                <option value="pending">Pending</option>
+                <option value="approved">Approved</option>
+                <option value="canceled">Canceled</option>
+            </select>
+            
+            <label for="doctor">Doctor:</label>
+            <select id="doctor-select" required>
+                <option value="" disabled selected>Select Doctor</option>
+            </select> 
+                <!-- Dynamically populated with doctor names -->
+            </select>
+            
+            <label for="dateFrom">Date From:</label>
+            <input type="date" id="dateFrom" name="dateFrom">
+            
+            <label for="dateTo">Date To:</label>
+            <input type="date" id="dateTo" name="dateTo">
+            
+            <button id="filterReport">Filter Report</button>
+        </div>
+        
+        <!-- Report Table -->
+        <table id="appointmentsReportTable">
+            <thead>
+                <tr>
+                    <th>Appointment ID</th>
+                    <th>Patient Name</th>
+                    <th>Doctor Name</th>
+                    <th>Appointment Date & Time</th>
+                    <th>Status</th>
+                    <th>Additional Message</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated dynamically -->
+            </tbody>
+        </table>
+    
+        <!-- Export Option -->
+        <button id="exportReport">Export to CSV</button>
+    </div>
+<footer class="dashboard-footer">
+    Doctor Appointment Management System
+    <p class="back-to-home">
+        <a href="dashboard.html" class="btn-home">Back to Previous Page</a>
+    </p>
+</footer>
+</main>
+</body>
+</html>
+    

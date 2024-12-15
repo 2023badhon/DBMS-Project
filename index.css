@@ -1,0 +1,293 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #fff;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+.about-left {
+    width: 60%;
+}
+
+.about-left h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-left p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.about-right {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-circle {
+    background: #fff;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.experience-circle h1 {
+    font-size: 48px;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.experience-circle p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Appointment Section */
+.appointment {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Header Style */
+.appointment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4A47A3;
+    color: white;
+}
+
+.appointment-header .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.appointment-header .header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.appointment-header .header-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.appointment-header .header-icons a:hover {
+    background-color: #3333aa;
+    border-radius: 5px;
+}
+
+.appointment-header .header-icons i {
+    margin-right: 8px;
+}
+
+
+.appointment-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.appointment-images img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.appointment-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.appointment-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group input, 
+.form-group select, 
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.header-icons {
+    display: flex; /* Use flexbox to align links side by side */
+    gap: 15px; /* Add spacing between the links */
+    align-items: center; /* Vertically center-align the items */
+}
+
+.header-icons a {
+    text-decoration: none; /* Remove underline from the links */
+    color: #000; /* Set link text color */
+    font-size: 16px; /* Adjust text size */
+    display: flex; /* Align icons and text side by side */
+    align-items: center;
+    gap: 5px; /* Add space between the icon and the text */
+    padding: 5px 10px; /* Add some padding for clickability */
+    border-radius: 5px; /* Optional: Add rounded corners for hover effect */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.header-icons a:hover {
+    background-color: #f0f0f0; /* Add a hover effect for better usability */
+    color: #333; /* Optional: Change text color on hover */
+}
+
+.header-icons a#logout-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #e74c3c; /* Red logout button */
+    transition: background-color 0.3s;
+}
+
+.header-icons a#logout-link:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.contact-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-section address {
+    font-style: normal;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.nav-links li a {
+    cursor: pointer;
+}

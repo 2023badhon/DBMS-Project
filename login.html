@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-form">
+            <h1>Login</h1>
+            <form id="login-form" action="javascript:void(0);">
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="passwords">Password</label>
+                    <input type="passwords" id="passwords" name="passwords" placeholder="Enter your password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="roles">Login As</label>
+                    <select id="roles" name="roles" required>
+                        <option value="">Select Role</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="client">Client</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">Login</button>
+            </form>
+            <p class="signup-link">Don't have an account? <a href="signup.html">Signup here</a></p>
+            
+            <!-- Back to Home Button -->
+            <p class="back-to-home">
+                <a href="index.html" class="btn-home">Back to Home</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

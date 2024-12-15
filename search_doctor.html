@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Doctor</title>
+    <link rel="stylesheet" href="search_doctor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container"> 
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <span class="logo-text">DAMS</span>
+            </div>
+        </aside>
+        <!-- Main Search Section -->
+        <div class="search-container">
+            <h1>Search Doctors</h1>
+            <input 
+                type="text" 
+                id="search-doctors" 
+                placeholder="Enter doctor name or specialty..." 
+            />
+            <button id="search-btn" class="search-btn">Search</button>
+            <div class="search-results">
+                <!-- Results will appear here -->
+            </div>
+        </div>
+        <p class="back-to-home">
+            <a href="client-dashboard.html" class="btn-home">Back to Previous Page</a>
+        </p>
+        
+    </div>
+    <script src="search_doctor.js"></script>
+</body>
+</html>

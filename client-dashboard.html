@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard</title>
+    <link rel="stylesheet" href="client-dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container"> 
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <span class="logo-text">DAMS</span>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="my_appointment.html" id="my-appointments"><i class="fa-solid fa-table-columns"></i> My Appointments</a>
+                <a href="search_doctor.html"><i class="fa-solid fa-search"></i> Search Doctors</a>
+                <a href="client-profile.html" id="my-profile-link"><i class="fa-solid fa-user"></i> My Profile</a>
+            </nav>
+            
+        </aside>
+           <!-- Main Content -->
+           <main class="main-content">
+            <header class="dashboard-header">
+                <h1>Client Dashboard</h1>
+                <div class="header-icons">
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+            </header>
+            <section class="stats-section">
+                <div class="stats-card yellow">
+                    <div class="stats-header">
+                        <h2>Upcoming Appointments</h2>
+                        <p class="stats-value"></p>
+                    </div>
+                    <button class="view-btn">View Details</button>
+                </div>
+                <div class="stats-card green">
+                    <div class="stats-header">
+                        <h2>Completed Appointments</h2>
+                        <p class="stats-value"></p>
+                    </div>
+                    <button class="view-btn">View Details</button>
+                </div>
+                <div class="stats-card red">
+                    <div class="stats-header">
+                        <h2>Cancelled Appointments</h2>
+                        <p class="stats-value"></p>
+                    </div>
+                    <button class="view-btn">View Details</button>
+                </div>
+                <div class="stats-card blue">
+                    <div class="stats-header">
+                        <h2>Total Appointments</h2>
+                        <p class="stats-value"></p>
+                    </div>
+                    <button class="view-btn">View Details</button>
+                </div>
+            </section>
+            <footer class="dashboard-footer">
+                Doctor Appointment Management System - Client Dashboard
+                <p class="back-to-home">
+                    <a href="index.html" class="btn-home">Back to Home</a>
+                </p>
+            </footer>
+        </main>
+    </div>
+    <script src="client-profile.js"></script>
+</body>
+</html>

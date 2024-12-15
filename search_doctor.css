@@ -1,0 +1,128 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fc; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Dashboard container */
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    max-width: 1100px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #5c6bc0; /* Blue color for the sidebar */
+    color: white;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sidebar-logo {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.logo-text {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Main search section */
+.search-container {
+    flex-grow: 1;
+    padding: 40px;
+    text-align: center;
+}
+
+.search-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#search-doctors {
+    width: 70%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 10px;
+    outline: none;
+    background-color: #f1f5fb; /* Light blue background */
+}
+
+#search-doctors:focus {
+    border-color: #5c6bc0; /* Focus border matching sidebar color */
+}
+
+.search-btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #5c6bc0; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #4f5ba6; /* Darker blue on hover */
+}
+
+.search-results {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer and Back to Home button */
+.dashboard-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.back-to-home {
+    margin-top: 20px;
+}
+
+.back-to-home a {
+    color: #5c6bc0; /* Match link color with the sidebar */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid #5c6bc0;
+    border-radius: 8px;
+}
+
+.back-to-home a:hover {
+    background-color: #5c6bc0;
+    color: white;
+}

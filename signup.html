@@ -1,0 +1,58 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-form">
+            <h1>Create an Account</h1>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="full_name">Full Name</label>
+                    <input type="text" id="full_name" name="full_name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobileNumber">Phone Number</label>
+                    <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="passwords">Password</label>
+                    <input type="password" id="passwords" name="passwords" placeholder="Enter your password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="roles">Signup As</label>
+                    <select id="roles" name="roles" required>
+                        <option value="">Select Role</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="client">Client</option>
+                    </select>
+                </div>
+
+                <!-- Specialization field, hidden by default, shown only for doctors -->
+                <div class="form-group" id="specialization-div" style="display: none;">
+                    <label for="specialization">Specialization:</label>
+                    <input type="text" id="specialization" name="specialization" placeholder="Enter your specialization">
+                </div>
+
+                <button type="submit" class="btn-submit">Signup</button>
+            </form>
+            <p class="login-link">Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
